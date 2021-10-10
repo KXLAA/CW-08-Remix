@@ -103,8 +103,8 @@
     /**************************/
     &__container{
         @include respond-to(xs){
-            height: 100vh;
-            padding-top: 3rem;
+            height: 130vh;
+            padding-top: 2rem;
         } 
     }
 

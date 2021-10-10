@@ -602,6 +602,9 @@ select {
   /**************************/
   /* BELOW 848px (TABLET)   */
   /**************************/
+  /**************************/
+  /* BELOW 480px (MOBILE)   */
+  /**************************/
 }
 .hero__heading {
   padding-bottom: 1.5rem;
@@ -632,12 +635,17 @@ select {
 @media screen and (max-width: 53rem) {
   .hero {
     flex-direction: column-reverse;
-    gap: 3rem;
   }
 }
 @media screen and (max-width: 53rem) {
   .hero__img-box {
     margin-left: 0rem;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 30rem) {
+  .hero {
+    padding-top: 3rem;
   }
 }
 
@@ -1086,8 +1094,8 @@ select {
 }
 @media screen and (max-width: 30rem) {
   .form__container {
-    height: 100vh;
-    padding-top: 3rem;
+    height: 130vh;
+    padding-top: 2rem;
   }
 }
 @media screen and (max-width: 30rem) {

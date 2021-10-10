@@ -44,15 +44,20 @@
     
     @include respond-to(sm){
         flex-direction: column-reverse;
-        gap: 3rem;
     }
 
     &__img-box{
         @include respond-to(sm){
             margin-left: 0rem;
+            margin-bottom: 3rem;
         }
-
-        
     }
+
+    /**************************/
+    /* BELOW 480px (MOBILE)   */
+    /**************************/
+    @include respond-to(xs){
+        padding-top: 3rem;
+    } 
 
 }
