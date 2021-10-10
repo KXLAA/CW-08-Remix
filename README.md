@@ -1,4 +1,4 @@
-# Codewell - Fiber Landing Page 
+# Codewell - Remix 
 
 This is a solution to the [Remix Template](https://www.codewell.cc/challenges/remix-template--609f74e13167fa10b79b7b9b). Codewell challenges help you Improve your HTML and CSS skills by practicing on real design templates.
 
