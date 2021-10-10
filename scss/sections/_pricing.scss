@@ -1,0 +1,88 @@
+.pricing{
+    padding-top: 6rem;
+    @include flex-center-vert;
+    gap: 4.5rem;
+
+    &__card--dark{
+        background-color: $pricing-card-bg-color--dark;
+        padding: 2rem;
+        border-radius: .625rem;
+    }
+
+    &__sub-heading,
+    &__sub-heading--dark{
+        padding: 0rem;
+    }
+
+    &__price,
+    &__price--dark{
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+
+    &__description{
+        margin-bottom: 2rem;
+    }
+
+    &__features{
+        list-style: none;
+    }
+
+    &__feature{
+        @include flex-center-vert;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__feature:last-child{
+        margin-bottom: 2rem;
+    }
+
+
+    /**************************/
+    /* BELOW 848px (TABLET)   */
+    /**************************/
+
+    @include respond-to(sm){
+        flex-wrap: wrap;
+    }
+
+    &__card--dark{
+        @include respond-to(sm){
+            order: 3;
+            width: 100%;
+        } 
+    }
+
+    &__card{
+        @include respond-to(sm){
+            flex:1;
+        } 
+    }
+
+    /**************************/
+    /* BELOW 480px (MOBILE)   */
+    /**************************/
+    &__card--dark{
+        @include respond-to(xs){
+            order: initial;
+            flex: initial;
+        } 
+    }
+
+    &__card{
+        @include respond-to(xs){
+            flex:initial;
+        } 
+    }
+
+
+}
+
+
+
+
+
+.small{
+    font-size: $font-size-md;
+}

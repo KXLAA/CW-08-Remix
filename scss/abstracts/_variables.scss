@@ -1,0 +1,177 @@
+/// **** FONT VARIABLES **** ///
+
+//Font family
+$font-family--primary: 'Space Grotesk', sans-serif;
+$font-family--secondary: 'Source Sans Pro', sans-serif;
+
+
+//Body Font Sizes
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875;   // 14px
+$font-size-md:                $font-size-base * 1.125;  // 18px
+
+//Body Line Heights
+$line-height-base:            1.5;
+$line-height-sm:              1.25;
+
+
+//Heading Font Sizes
+$h1-font-size:                3.5rem;               //  56px
+$h2-font-size:                2.25rem;              //  36px
+$h3-font-size:                1.25rem;              //  20px
+
+
+//Heading Line Heights 
+$h1-line-height:                4.5rem;              //  72px
+$h2-line-height:                3rem;                //  48px
+$h3-line-height:                1.5rem;             //   24px
+
+
+//Font Weights
+$font-weight-normal:          400;
+$font-weight-medium:          500;
+$font-weight-semi-bold:       600;
+$font-weight-bold:            700;
+
+
+/// **** COLORS VARIABLES  **** ///
+// Descriptive naming
+$color-shark:#1F2227;
+$color-ripe-lemon:#F7CA18;
+$color-silver-chalice:#A3A3A3;
+$color-deep-bronze:#413906;
+$color-abbey:#494A51;
+$color-mako:#41424E;
+$color-french-gray:#C6C8CD; 
+$color-scorpion:#595959;
+$color-black:#000000;
+$color-white:#FFFFFF;
+$color-flamingo:#F03D3E;
+$color-athens-gray:#F5F6F8;
+
+
+
+
+
+
+
+// Functional naming
+/********** BODY *************/
+
+    //HEADINGS
+    $heading-color--light: $color-black;
+    $heading-color--dark : $color-white;
+    $heading-color--footer: $color-black;
+
+    //BODY
+    $body-bg-color--dark:$color-shark;
+    $body-bg-color--light:$color-white;
+    $body-color--light: $color-scorpion;
+    $body-color--dark: $color-silver-chalice;
+
+    //LINKS
+    $links-color--light: $color-scorpion;
+    $links-color--dark: $color-ripe-lemon;
+
+
+/********** CONSTANTS *************/
+    //MODE-TOGGLE
+    $colour-switcher-bg-color--light :$color-athens-gray;
+    $colour-switcher-bg-color--dark :$color-black;
+    $colour-switcher-toggle-color--light :$color-white;
+    $colour-switcher-toggle-color--dark :$color-abbey;
+
+    // BUTTON
+    $button-primary-color:$color-black;
+    $button-primary-bg-color:$color-ripe-lemon;
+    $button-secondary-color:$color-white;
+    $button-secondary-bg-color:$color-deep-bronze;
+
+    // INPUTS
+    $input-focus--border: $color-deep-bronze;
+    $input--error: $color-flamingo;
+
+    // FOOTER
+    $footer-bg-color:$color-ripe-lemon;
+    $footer-icon-color:$color-ripe-lemon;
+    $copyright-bg-color:$color-deep-bronze;
+    $copyright-txt-color:$color-ripe-lemon;
+    $footer-txt-color:$color-deep-bronze;
+
+    //NAVIGATION
+    $mobile-nav-bg-color: rgb(28, 28, 28);
+    $mobile-nav-btn-color--light:$color-black;
+    $mobile-nav-btn-color--dark:$color-white;
+
+
+    
+/********** LANDING PAGE *************/
+    //PRICING SECTION
+    $pricing-section-txt-color:$color-french-gray;
+    $pricing-txt-color--dark: $color-french-gray;
+    $pricing-card-bg-color--dark: $color-mako;
+
+    //TESTIMONIAL SECTION
+    $testimonial-bg-color--light: $color-athens-gray;
+    $testimonial-bg-color--dark: $color-mako;
+
+    //CTA SECTION
+    $cta-bg-color:$color-ripe-lemon;
+
+
+
+
+/********** ONBOARDING PAGE *************/
+    // SIGN-UP MODAL 
+    $sign-up-modal-bg-color--dark:$color-mako;
+    $sign-up-modal-bg-color--light:$color-athens-gray;
+
+    //BACK BTN 
+    $back-btn-bg-color:$color-mako;
+
+    //OPTION CARD 
+    $option-card-bg-color:$color-white;
+
+    //FORM
+    $form-heading--light:$color-black;
+    $form-heading--dark:$color-white;
+    $form-link--dark:$color-ripe-lemon;
+
+
+
+/********** BLOG PAGE *************/
+    //BLOG CARD
+    $blog-card-bg-color--dark:$color-mako;
+    $blog-card-bg-color--light:$color-athens-gray;
+
+    //OTHERS 
+    $tab-indicator-color:$color-ripe-lemon;
+    $tab-indicator-border--light:$color-athens-gray;
+    $tab-indicator-border--dark:$color-mako;
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

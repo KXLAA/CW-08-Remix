@@ -1,0 +1,75 @@
+.color-switch{
+    &__container{
+        @include flex-center-vert
+    }
+
+    &__label{
+        width: 13.25rem;
+        height: 3.6875rem;
+        background-color: #F5F6F8;
+        border-radius: .3125rem;
+        cursor: pointer;
+        @include flex-center-vert;
+        justify-content: space-evenly;
+        position: relative;
+    
+    }
+
+    &__icon-container{
+        @include flex-center-vert;
+        gap:.5rem;
+        z-index: 3;
+    }
+
+    &__toggle{
+        width: 5.75rem;
+        height: 2.4375rem;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        position: absolute  ;
+        top: .6rem;
+        left: 1.05rem;
+        transition: all 250ms ease-in-out;
+        z-index: 1;
+        filter: drop-shadow(0px .0625rem .125rem rgba(0, 0, 0, 0.25));
+    }
+
+    /**************************/
+    /* BELOW 480px (MOBILE)   */
+    /**************************/
+    &__label{
+        @include respond-to(xs){
+            display: none;
+        } 
+
+    }
+   
+}
+
+
+//COLOR-SWITCH MECHANISM 
+#color-switch{
+    //Hide checkbox
+    &__input{
+        position: absolute;
+        opacity: 0;
+    }
+    
+    //Default is light mode -- when user clicks toggle -> change background color of the color switcher
+    &__input:checked + .color-switch__label {
+        background-color: $colour-switcher-bg-color--dark;
+    }
+
+    //When user clicks toggle -> change the color of the toggle and animate the toggle
+    &__input:checked + .color-switch__label .color-switch__toggle {
+        background-color: $colour-switcher-toggle-color--dark;
+        transform: translateX(5.5rem);
+    }
+    
+}
+
+.mode--dark{
+    background-color: $body-bg-color--dark;
+    color: $body-color--dark;
+}
+

@@ -1,0 +1,85 @@
+.cta{
+    margin-top: 6rem;
+    background-color: $cta-bg-color;
+    
+    &__container{
+        @include flex-center;
+    }
+
+    &__img-box{
+        width: 100%;
+        margin-left: 11rem;
+    }
+
+    &__heading{
+        @include heading(secondary--light);
+        margin-bottom: .75rem;
+    }
+
+    &__description{
+        margin-bottom: .75rem;
+    }
+
+    &__cta{
+        @include flex-center-vert;
+        gap: .5rem;
+    }
+
+    &__input{
+        border-radius: 5px;
+        border: none;
+        padding: 1.125rem 1.5rem;
+    }
+
+    /**************************/
+    /* BELOW 848px (TABLET)   */
+    /**************************/
+
+    @include respond-to(sm){
+        padding-top: 4.5rem;
+    }
+
+    &__container{
+        @include respond-to(sm){
+            flex-direction: column;
+            gap: 3rem;
+        }
+    }
+
+    &__img-box{
+        @include respond-to(sm){
+            margin-left: 0rem;
+            width: 80%;
+        }
+    }
+
+
+    /**************************/
+    /* BELOW 480px (MOBILE)   */
+    /**************************/
+    
+
+    &__cta{
+        @include respond-to(xs){
+            flex-direction: column;
+        }
+    }
+
+    &__btn{
+        @include respond-to(xs){
+            width: 100%;
+        } 
+    }
+
+    &__input{
+        @include respond-to(xs){
+            width: 100%;
+        }
+    }
+
+
+
+
+
+
+}

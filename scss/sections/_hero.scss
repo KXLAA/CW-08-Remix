@@ -1,0 +1,58 @@
+.hero{
+    @include flex-center-vert;
+    padding-top: 6rem;
+
+    &__heading{
+        padding-bottom: 1.5rem;
+        position: relative;
+    }
+
+    &__description{
+        padding-bottom: 1.5rem;
+    }
+
+    &__btn{
+        max-width: 14rem;
+    }
+
+    &__img-box{
+        width: 100%;
+        margin-left: 6rem;
+    }
+
+    &__img--light{
+        width: 100%;
+    }
+
+    &__img--dark{
+        width: 100%;
+    }
+
+    &__highlight{
+        display: none;
+        position: absolute;
+        top: 4.5rem;
+        left: 6.3rem;    
+    }
+
+    //*********MEDIA QUERIES*********//
+
+
+    /**************************/
+    /* BELOW 848px (TABLET)   */
+    /**************************/
+    
+    @include respond-to(sm){
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+
+    &__img-box{
+        @include respond-to(sm){
+            margin-left: 0rem;
+        }
+
+        
+    }
+
+}

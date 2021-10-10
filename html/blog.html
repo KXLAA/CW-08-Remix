@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+        <script src="../js/blog.js" defer></script>
+        <title>Remix | Developer hand-off has never been easier.</title>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+
+    <body class="body-color--light">
+        <nav class="nav nav-link--light layout__container">
+            <a href="../html/index.html" class="blog__logo">
+                <img src="../Assets/Remix Logo Light Mode.svg" alt="Remix-logo-light" class="blog__logo--light">
+                <img src="../Assets/Remix-logo.svg" alt="Remix-logo-dark" class="blog__logo--dark hidden">
+                <p class="blog__logo-txt">Blog</p>
+            </a>
+    
+            <div class="color-switch__container">
+                <input type="checkbox" id="color-switch__input">
+        
+                <label for="color-switch__input" class="color-switch__label">
+        
+                    <div class="color-switch__icon-container  mode-changer--light">
+                        <img src="../Assets/Light.svg" alt="light-mode" class="light-mode">
+                        <p class="">Light</p>
+                    </div>
+        
+                    <div class="color-switch__icon-container  mode-changer--dark">
+                        <img src="../Assets/Moon.svg" alt="dark-mode" class="dark-mode">
+                        <p class="">Dark</p>
+                    </div>
+        
+                    <div class="color-switch__toggle"></div>
+        
+                </label>    
+            </div>
+        </nav>
+
+        <section class="blog layout__container">
+
+            <div class="blog__nav blog__tab-border--light">
+                <div class="blog__tabs nav-link--light">
+                    <p data-tab-target="#tab__recent" class="tab--main active">Recent</p>
+                    <p data-tab-target="#tab__resources" class="tab--main">Resources</p>
+                    <p data-tab-target="#tab__figma-tips" class="tab--main">Figma Tips</p>
+                </div>
+    
+                <div class="blog__search">
+                    <img src="../Assets/Search.svg" alt="" class="blog__search-img">
+                    <p class="blog__search-txt">Search</p>
+                </div>
+            </div>
+
+            <div class="blog__content">
+                
+                <div id="tab__recent" data-tab-content class="active blog__blogs">
+                    <div class="blog__blogs">
+                        <div class="blog__card--1">
+                            <img src="../Assets/Blog-1-Image.png" alt="" class="blog__img">
+    
+                            <div class="blog__txt">
+                                <div class="blog__title blog-heading--light">
+                                    <h3 class="blog__heading">Celebrating Earth Day at Remix</h3>
+                                    <p class="blog__date">April 12, 2021</p>
+                                </div>
+    
+                                <p class="blog__description">One thing COVID has shown us is how 
+                                    Earth can still be saved. See how we’re contributing to making
+                                     Earth a better place at Remix.
+                                </p>
+                
+                            </div>
+    
+                        </div>
+    
+                        <div class="blog__card--2">
+                            <img src="../Assets/Blog-2-Image.png" alt="" class="blog__img">
+    
+                            <div class="blog__txt">
+                                <div class="blog__title blog-heading--light">
+                                    <h3 class="blog__heading">Productivity</h3>
+                                    <p class="blog__date">Jan 15, 2021</p>
+                                </div>
+    
+                                <p class="blog__description">Tips on being more productive by Remix.
+                                </p>
+                
+                            </div>
+    
+    
+    
+                        </div>
+    
+                        <div class="blog__card--3">
+                            <img src="../Assets/Blog-3-Image.png" alt="" class="blog__img">
+    
+                            <div class="blog__txt">
+                                <div class="blog__title blog-heading--light">
+                                    <h3 class="blog__heading">Developer Hand-off Explained</h3>
+                                    <p class="blog__date">May 21, 2021</p>
+                                </div>
+    
+                                <p class="blog__description">Our team goes over what developer hand-off is in complete details.
+                                </p>
+                
+                            </div>
+    
+    
+    
+                        </div>
+    
+                        <div class="blog__card--4">
+                            <img src="../Assets/Blog-4-Image.png" alt="" class="blog__img">
+    
+                            <div class="blog__txt">
+                                <div class="blog__title blog-heading--light">
+                                    <h3 class="blog__heading">Using Figma Variants</h3>
+                                    <p class="blog__date">April 22, 2021</p>
+                                </div>
+    
+                                <p class="blog__description">Learn how to create Figma variants for components 
+                                    to facilitate developer hand offs.
+                                </p>
+            
+                            </div>
+    
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div id="tab__resources" data-tab-content>
+                    
+
+
+
+
+                </div>
+
+                <div id="tab__figma-tips" data-tab-content>
+                    
+
+
+
+
+                </div>
+
+                <div id="tab__company" data-tab-content>
+                    
+
+
+
+
+                </div>
+
+            </div>
+
+
+            
+
+
+
+
+
+
+        </section>
+
+
+
+        <!--############# FOOTER ############# -->
+        <footer class="footer footer-txt">
+
+            <div class="footer__container layout__container">
+
+                <div class="footer__col--info">
+                    <img src="../Assets/Footer-logo.svg" alt="Remix-logo-light" class="footer__logo">
+                    <p class="footer__info">
+                        Remix is a Figma and Sketch plugin that was made with Developers in mind. 
+                        Create custom React components in seconds, copy CSS code in one click, and 
+                        export your assets effortlessly.
+                    </p>
+                </div>
+
+                <ul class="footer__col--links">
+                    <li class="footer__heading heading--footer"><a href="#">Supported</a></li>
+                    <li class="footer__link"><a href="#">Sketch</a></li>
+                    <li class="footer__link"><a href="#">Figma</a></li>
+                </ul>
+
+                <ul class="footer__col--links">
+                    <li class="footer__heading heading--footer"><a href="#">Developers</a></li>
+                    <li class="footer__link"><a href="#">API</a></li>
+                    <li class="footer__link"><a href="#">Documentation</a></li>
+                </ul>
+
+                <ul class="footer__col--links">
+                    <li class="footer__heading heading--footer"><a href="#">Company</a></li>
+                    <li class="footer__link"><a href="./blog.html">Career</a></li>
+                    <li class="footer__link"><a href="./blog.html">Support</a></li>
+                    <li class="footer__link"><a href="./blog.html">Culture</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer__footer">
+                <div class="footer__footer-container layout__container">
+                    <p class="footer__copyright">© Remix 2021</p>
+
+                    <div class="footer__contact">
+                        <p class="footer__email">support@remix.com</p>
+                        <ion-icon name="logo-facebook" class="footer__icon"></ion-icon>
+                        <ion-icon name="logo-twitter" class="footer__icon"></ion-icon>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        
+
+    </body>
+
+
+
+
+
+
+
+
+
+</html>

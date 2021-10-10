@@ -1,0 +1,123 @@
+.blog{
+    &__nav{
+        @include flex-center;
+        justify-content: space-between;
+        padding-bottom: .5rem;
+        margin-bottom: 2rem;
+        margin-top: 2.5rem;
+        cursor: pointer;
+    }
+
+    &__tab-border--light{
+        border-bottom: .1875rem solid $tab-indicator-border--light;
+    }
+
+    &__tab-border--dark{
+        border-bottom: .1875rem solid $tab-indicator-border--dark
+    }
+
+    &__logo{
+        @include flex-center-vert; 
+        gap: .5rem; 
+    }
+
+    &__tabs{
+        @include flex-center-vert;
+        gap: 1.5rem; 
+    }
+
+    &__search{
+        @include flex-center;
+        gap: 1.5rem; 
+    }
+
+    &__blogs{
+        @include flex-center-vert;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+
+    &__title{
+        margin-bottom: .5rem;
+    }
+
+    &__card--1{
+        width:  47.25rem;
+        flex: 1;
+    }
+
+    &__card--2{
+        width:  21.5rem;
+    }
+
+    &__card--3{
+        width: 32.375rem;        
+    }
+
+    &__card--4{
+        width: 36.375rem;
+        flex: 1;
+    }
+
+    &__txt{
+        background-color: $blog-card-bg-color--light;
+        padding: 2.5rem;
+        border-bottom-left-radius: .3125rem;
+        border-bottom-right-radius: .3125rem;
+    }
+
+    &__txt--dark{
+        background-color: $blog-card-bg-color--dark;
+    }
+
+    &__title{
+        @include flex-center-horiz; 
+        gap: .5rem;
+        justify-content: space-between;
+    }
+
+    /**************************/
+    /* BELOW 848px (TABLET)   */
+    /**************************/
+    &__blogs{
+        @include respond-to(sm){
+            flex-direction: column;
+        }
+    }
+
+    &__tabs{
+        @include respond-to(sm){
+            width: 100%;
+        }
+    }
+
+    &__card--1, &__card--2,&__card--3,&__card--4 {
+        @include respond-to(sm){
+            flex: initial;
+            width: 100%;
+        }
+    }
+
+    &__search{
+        @include respond-to(sm){
+            display: none
+        }
+    }
+
+    /**************************/
+    /* BELOW 480px (MOBILE)   */
+    /**************************/
+    &__title{
+        @include respond-to(sm){
+            flex-direction: column;
+        }
+    }
+}
+
+[data-tab-content]{
+    display: none;
+}
+
+.active[data-tab-content]{
+    display: block;
+}

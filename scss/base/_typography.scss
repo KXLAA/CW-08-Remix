@@ -1,0 +1,269 @@
+/// **** HEADINGS FONT STYLES **** ///
+$heading-fs: (
+  h1: $h1-font-size, //  56px
+  h2: $h2-font-size, //  36px
+  h3: $h3-font-size, //  20px
+)!default;
+
+$heading-line-height: (
+  h1-lh: $h1-line-height, //  72px
+  h2-lh: $h2-line-height, //  48px
+  h3-lh: $h3-line-height, //  24px
+)!default;
+
+
+@mixin heading-base{
+    font-family: $font-family--primary;
+    font-weight: $font-weight-semi-bold;
+}
+
+
+@mixin heading($style) {
+    @if $style == "primary--dark" {
+      @include heading-base;
+      font-size: map-get($heading-fs, h1);
+      line-height: map-get($heading-line-height, h1-lh);
+      color: $heading-color--dark;
+    }
+
+    @else if $style == "primary--light" {
+      @include heading-base;
+      font-size: map-get($heading-fs, h1);
+      line-height: map-get($heading-line-height, h1-lh);
+      color: $heading-color--light;
+
+    }
+
+    @else if $style == "secondary--dark" {
+      @include heading-base;
+      font-size: map-get($heading-fs, h2);
+      line-height: map-get($heading-line-height, h2-lh);
+      color: $heading-color--dark;
+    }
+
+    @else if $style == "secondary--light" {
+      @include heading-base;
+      font-size: map-get($heading-fs, h2);
+      line-height: map-get($heading-line-height, h2-lh);
+      color: $heading-color--light;
+    }
+
+    @else if $style == "tertiary" {
+      @include heading-base;
+      font-size: map-get($heading-fs, h3);
+      line-height: map-get($heading-line-height, h3-lh);
+      color: $heading-color--footer;
+    }
+
+}
+
+// ===== Usage ===== //
+
+//Main Heading Styles
+.heading__primary--light{
+  @include heading(primary--light);
+}
+
+.heading__primary--dark{
+  @include heading(primary--dark);
+}
+
+.heading__secondary--light{
+  @include heading(secondary--light);
+}
+
+.heading__secondary--dark{
+  @include heading(secondary--dark);
+}
+
+//Footer Heading Styles
+.heading--footer{
+  @include heading(tertiary);
+  font-family: $font-family--secondary;
+}
+
+// ********* HOME PAGE ********* //
+//Pricing Headings
+.heading__price--light{
+  @include heading(primary--light);
+  color: $body-color--light;
+}
+.heading__price--dark{
+  @include heading(primary--dark);
+  color: $pricing-txt-color--dark;
+}
+.subheading__price--light{
+  @include heading(primary--light);
+  color: $body-color--light;
+  font-size:$font-size-md;
+  font-weight: $font-weight-medium;
+  line-height: $h3-line-height;
+}
+
+.subheading__price--dark{
+  @include heading(primary--dark);
+  color: $pricing-txt-color--dark;
+  font-size: $font-size-md;
+  font-weight: $font-weight-medium;
+  line-height: $h3-line-height;
+}
+
+
+/// **** BODY FONT STYLES **** ///
+$body-fs: (
+  base: $font-size-base,        // 16px
+  sm: $font-size-sm,            // 14px
+  md:  $font-size-md,           // 18px
+)!default;
+  
+  
+@mixin body-base{
+  font-family: $font-family--secondary;
+  font-size: map-get($body-fs, md);
+  font-weight: $font-weight-normal;
+  line-height: $line-height-base;
+}
+
+
+@mixin body($style) {
+  @if $style == "body-color--dark" {
+    @include body-base;
+    color: $body-color--dark;
+  }
+
+  @else if $style == "body-color--light" {
+    @include body-base;
+    color: $body-color--light;
+  }
+}
+
+// ===== Usage ===== //
+
+//Main Text Styles
+.body-color--light{
+  @include body(body-color--light);
+}
+.body-color--dark {
+  @include body(body-color--dark);
+}
+
+
+// ********* HOME PAGE ********* //
+
+//Navigation Text Styles
+.nav-link--light{
+  @include body(body-color--light);
+  font-family: $font-family--primary;
+  font-weight:$font-weight-medium;
+}
+.nav-link--dark{
+  @include body(body-color--dark);
+  font-family: $font-family--primary;
+  font-weight:$font-weight-medium;
+}
+
+
+//Info Text Styles
+.link--light{
+  @include body-base;
+  font-weight:$font-weight-bold;
+  color: $links-color--light;
+  text-decoration: underline;
+}
+.link--dark{
+  @include body-base;
+  font-weight:$font-weight-bold;
+  color: $links-color--dark;
+  text-decoration: underline;
+}
+
+
+//Testimonial Text Styles
+.review-color--light{
+  @include body(body-color--light);
+  font-family: $font-family--primary;
+}
+.review-color--dark{
+  @include body(body-color--dark);
+  font-family: $font-family--primary;
+}
+
+//Pricing Text Styles
+.pricing-txt--light{
+  @include body(body-color--light);
+  font-family: $font-family--primary;
+  font-weight: $font-weight-normal;
+}
+.pricing-txt--dark{
+  @include body(body-color--dark);
+  color: $pricing-txt-color--dark;
+  font-family: $font-family--primary;
+  font-weight: $font-weight-normal;
+}
+
+//Footer Text Styles
+.footer-txt{
+  @include body(body-color--dark);
+  color: $footer-txt-color;
+}
+
+
+// ********* ONBOARDING PAGE ********* //
+.onboarding-txt--light{
+  @include body(body-color--light);
+  font-family: $font-family--primary;
+  font-weight:$font-weight-normal;
+}
+
+.onboarding-txt--dark{
+  @include body(body-color--dark);
+  font-family: $font-family--primary;
+  font-weight:$font-weight-normal;
+}
+
+.heading__form--light{
+  @include body-base;
+  font-family: $font-family--primary;
+  font-weight: $font-weight-bold;
+  color: $form-heading--light;
+}
+
+.heading__form--dark{
+  @include body-base;
+  font-family: $font-family--primary;
+  font-weight: $font-weight-bold;
+  color: $form-heading--dark;
+}
+
+// ********* BLOG PAGE ********* //
+.blog-heading--light{
+  @include body(body-color--light);
+  font-family: $font-family--primary;
+  font-weight:$font-weight-bold;
+  color: $color-black;
+}
+
+.blog-heading--dark{
+  @include body(body-color--light);
+  font-family: $font-family--primary;
+  font-weight:$font-weight-bold;
+  color: $color-white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
