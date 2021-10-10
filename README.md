@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/KXLAA/CW-03-spense)
-- Live Site URL: [Live Preview](https://github.com/KXLAA/CW-08-Remix)
+- Solution URL: [Github Repo](https://github.com/KXLAA/CW-08-Remix)
+- Live Site URL: [Live Preview](https://kxlaa.github.io/CW-08-Remix/)
 
 
 ## My process
