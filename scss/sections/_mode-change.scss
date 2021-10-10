@@ -37,13 +37,13 @@
     /**************************/
     /* BELOW 480px (MOBILE)   */
     /**************************/
-    &__label{
+
+    &__label--main{
         @include respond-to(xs){
             display: none;
         } 
-
     }
-   
+
 }
 
 
