@@ -6,8 +6,8 @@ This is a solution to the [Remix Template](https://www.codewell.cc/challenges/re
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Demo](#demo)
+  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -23,14 +23,17 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 
+### Demo
+
+![](Assets/DEMO.gif)
+
+
 ### Screenshot
 
 ![](Assets/Screenshot-01.png)
 ![](Assets/Screenshot-02.png)
 ![](Assets/Screenshot-03.png)
 
-### Demo
-![](Assets/DEMO.gif)
 
 
 ### Links
